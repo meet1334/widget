@@ -25,7 +25,7 @@
       })
       .then(function (responseData) {
         const apiData = responseData?.getCustomerInfoByWidgetChatIdResponseOut;
-        console.log(apiData, "apidata 1234");
+        console.log(apiData, "apidata 12345");
         if (apiData) {
           const container = document.createElement("div");
           container.style.position = "fixed";
@@ -105,7 +105,7 @@
               chatIframe.style.display = "block";
               numberSpan.style.display = "none";
               numberSpan.innerText = "";
-              console.log(apiData.chatWidgetPortal, "click 1234");
+              console.log(apiData.chatWidgetPortal, "click 12345");
               chatIframe.contentWindow.postMessage(
                 "0",
                 apiData.chatWidgetPortal
