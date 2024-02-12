@@ -123,8 +123,8 @@
             button.style.transform = "scale(1)";
           });
           window.addEventListener("message", function (event) {
-            console.log(event,"event 1234");
-            console.log(event.data.count,"data count 1234");
+            // console.log(event,"event 1234");
+            // console.log(event.data.count,"data count 1234");
             // Check the origin to ensure the message is from a trusted source
             if (
               chatIframe.style.display === "none" &&
@@ -141,7 +141,6 @@
                   apiData.chatWidgetPortal
                 );
             } 
-            console.log("Received message: 1234", event.data);
           });
         }
       })
