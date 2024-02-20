@@ -8,7 +8,7 @@
     const managePlus = encodeURIComponent(addPlus);
 
     var url =
-      "https://gea-app.azurewebsites.net/api/radefy-customer/User/getCustomerByWidgetChatId?widgetId=" +
+      "https://192.168.13.30:7079/api/radefy-customer/User/getCustomerByWidgetChatId?widgetId=" +
       managePlus;
 
     fetch(url, {
@@ -24,8 +24,9 @@
         return response.json();
       })
       .then(function (responseData) {
+        console.log(responseData, "123PAPA");
         const apiData = responseData?.getCustomerInfoByWidgetChatIdResponseOut;
-        console.log(apiData, "apidata 12345");
+        console.log(apiData, "123PAPA");
         if (apiData) {
           const container = document.createElement("div");
           container.style.position = "fixed";
@@ -105,7 +106,7 @@
               chatIframe.style.display = "block";
               numberSpan.style.display = "none";
               numberSpan.innerText = "";
-              console.log(apiData.chatWidgetPortal, "click 12345");
+              console.log( apiData.chatWidgetPortal,"123Origin");
               chatIframe.contentWindow.postMessage(
                 "0",
                 apiData.chatWidgetPortal
@@ -123,24 +124,24 @@
             button.style.transform = "scale(1)";
           });
           window.addEventListener("message", function (event) {
-            // console.log(event,"event 1234");
-            // console.log(event.data.count,"data count 1234");
             // Check the origin to ensure the message is from a trusted source
             if (
               chatIframe.style.display === "none" &&
               event.data.count !== undefined &&
               event.data.count
             ) {
-              console.log("data count event 123", event.data.count);
+              console.log( event.data.count,"count none site if  123");
               numberSpan.style.display = "inline-block";
               numberSpan.innerText = event.data.count;
             } else {
+            console.log(  !!event.data.count,"123Origin for zero make else 123");
               !!event.data.count &&
                 chatIframe.contentWindow.postMessage(
                   "0",
                   apiData.chatWidgetPortal
                 );
-            } 
+            }
+            console.log("Received message:", event.data);
           });
         }
       })
