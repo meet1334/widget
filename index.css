@@ -1,0 +1,226 @@
+header{
+    background-color: aliceblue;
+}
+
+.main-container{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    
+}
+.navbar{
+    color:black;
+    display: flex;
+    flex-direction: row;
+    
+}
+.index-logo{
+    display: flex;
+    flex-direction:row;
+    height:20vh;
+    width:15vw;
+    padding-left: 2%;
+
+}
+
+.menubar{
+    padding-left: 25%;
+    display: flex;
+    flex-direction:row;
+    color:mediumslateblue;
+    
+}
+.menubar ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px;
+    font-size: 30px;
+}
+.img-bg{
+    background: url("https://img.freepik.com/free-photo/cozy-restaurant-with-people-waiter_175935-230.jpg") center center/cover;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+     opacity:0.9;
+ 
+}
+.menu-image{
+    background:url("https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&dpr=1" )center center/cover;
+    opacity: 0.8;
+    position: relative; 
+    
+}
+/* .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+} */
+.menu-content{
+     margin-top: 10%;
+    color:black;
+    height:110vh;
+    z-index: 3;
+    
+    
+}
+.menu-heading h2{
+    align-items: center;
+    padding-left: 47%;
+}
+.line{
+    padding-left: 2;
+    height: 3px;
+    width:8rem;
+    background-color:darkorange;
+ 
+}
+.menu-items{
+    display: grid;
+    grid-template-columns:auto auto auto;
+
+}
+.gujrati{
+    padding-left: 15%;
+    
+
+}
+.punjabi{
+    padding-left: 40%;
+
+}
+.chinies{
+    padding-left: 50%;
+
+}
+.fastfood{
+    padding-left: 15%;
+
+}
+.drinks{
+    padding-left: 40%;
+
+}
+.starter{
+     padding-left: 50%;
+}
+.blog{
+
+}
+.blog-items{
+
+}
+.blog-items h2{
+    
+    text-align:center;
+}
+.blog-items img{
+    padding-left: 25%;
+    align-items: center;
+}
+
+.line1{
+    margin: 1rem;
+    padding-left: 2%;
+    height: 2px;
+    width:25rem;
+    background-color:darkorange;
+ 
+}
+
+.location-items h2{
+    
+    text-align:center;
+}
+.about-items h2{
+    
+    text-align:center;
+}
+.contact-items h2{
+    
+    text-align:center;
+}
+
+/* footer starts */
+.footer{
+    
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    color:black; 
+    background-color:white;
+    font-size: 15px;
+}    
+
+.company-address{
+    
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+    width: 60%; */
+    align-items: center;
+    font-size: 15px;
+    margin-left: 10%;
+
+
+
+}
+.company-address p{
+    margin-left: 10%;
+    
+
+}
+
+.line3{
+    height: 2px;
+    width: 4rem;
+    background-color:darkorange;
+    display: block;
+    margin: 0.5rem;
+
+}
+
+.natigate{
+    align-items: center;
+    font-size: 15px;
+    margin-left: 30%;
+
+}
+.natigate h4{
+    font-size: 15px;
+}
+.natigate ul{
+    list-style-type: none;
+    
+}
+.natigate a{
+    text-decoration: none;
+}
+.follow-me{
+    margin-left: 40%;
+    
+}
+.follow-me i{
+    padding: 2%;
+    padding-top:7%;
+}
+/* .follow-me ul{
+        list-style-type: none;
+        display: inline-block;
+        padding: 15px;    
+    }
+.line3 h3{
+    padding-left: 10%;
+    
+} */
+.line3 ul{
+    padding-top:3rem;
+}
+.copyright{
+    color:white; 
+    background-color: black;
+    margin-down: 10%;
+    padding-left: 10%;
+}
+/* footer ended */
